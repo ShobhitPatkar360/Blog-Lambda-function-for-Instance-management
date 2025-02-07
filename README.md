@@ -47,7 +47,7 @@ This is the most important function which takes an event object. It generally co
 6. ec2_client: It is an ec2 client object that represents all the informations about EC2 service.
 7. Functions Response: When we call another function within a Lambda function, it provides a response if an error occurs, making it useful for identifying the reason behind the error. create_instance_response, termination_response, change_state_response, create_ami_response, remove_ami_response, cancel_spot_response, first_instance_response represents the responses.
 
-While starting the server, be sure that there should no instance running, it there is already an instance running with same name tag then it might exit the code graceful with a message. This logic is written in get_instance_id() function where we also provided an input variable.
+While starting the server, be sure that there should no instance running with same name, it there is already an instance running then it might exit the code graceful with a message. This logic is written in get_instance_id() function where we also provided an input variable.
 
 ```python
 import boto3
