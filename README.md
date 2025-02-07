@@ -9,15 +9,26 @@ If developers are working on the server and want to save the state without termi
 # Requirements
 
 1. You should have an AWS account with atleast following permissions - 
+
 AmazonEventBridgeFullAccess
+
 AmazonDynamoDBFullAccess
+
 iam:CreateServiceLinkedRole
+
+
 iam:PutRolePolicy
+
 iam:AttachRolePolicy
+
 iam:PutRolePolicy
+
 iam:AttachRolePolicy
+
 iam:CreateServiceLinkedRole
+
 ec2:*
+
 scheduler:*
 2. You should have your AWS Credentials like AWS Access key and AWS Secret Key along with region name.
 3. You should have key pair installed in your system, if you would like to take the ssh access. Keep in mind to use correct ip. Here elastic ip is already assigned to instance.
